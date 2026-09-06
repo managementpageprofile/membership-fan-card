@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Membership Fan Card | MFC</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+<a class="brand" href="#home"><span class="logo">MFC</span><span>MEMBERSHIP FAN CARD</span></a>
+<button class="menu" id="menu">☰</button>
+<nav id="nav">
+<a href="#home">Home</a><a href="#about">About Us</a><a href="#fan-card">Fan Card</a>
+<a href="#experiences">Events/Tickets</a><a href="#vip">VIP</a><a href="#meet-greet">Meet & Greet</a>
+<a href="#request">Request Form</a><a href="#contact">Contact</a><a href="#faq">FAQ</a>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div>
+<p class="eyebrow">MFC • MEMBERSHIP FAN CARD</p>
+<h1>Join the Ultimate Celebrity Fan Membership</h1>
+<p>Discover your favorite celebrities, join exclusive fan memberships, and get your fan card with special member benefits and experiences.</p>
+<a class="button" href="#request">REQUEST FAN CARD</a>
+</div>
+</section>
+
+<section class="section" id="about">
+<p class="eyebrow">ABOUT US</p><h2>About Us</h2>
+<p class="lead">We are a fan membership platform created to bring fans and their favorite celebrities closer together. Our goal is to provide a simple and enjoyable way for fans to discover membership opportunities, fan cards, events, and special experiences.</p>
+<p>We are committed to providing clear information about available memberships and experiences, with specific benefits and availability depending on each participating celebrity.</p>
+</section>
+
+<section class="section light" id="fan-card">
+<p class="eyebrow">FAN CARD</p><h2>Celebrity Fan Cards</h2>
+<p class="lead">Choose your favorite celebrity and become part of their fan community with a dedicated fan membership card. Explore available membership options and discover the benefits included with each card.</p>
+<div class="cards">
+<article class="card featured"><span class="tag">MEMBERSHIP</span><h3>Celebrity Fan Club Card</h3><div class="price">$300</div>
+<p>One-year fan membership for supporters who want to join their chosen celebrity's fan community.</p>
+<ul><li>Fan membership status</li><li>Digital or physical membership card</li><li>Exclusive celebrity content and updates</li><li>Access to premium membership packages</li><li>Member-only offers</li><li>Eligible fan activities and special event opportunities</li></ul>
+<a class="button" href="#request">GET YOUR FAN CARD</a></article>
+<article class="card"><span class="tag">EXPERIENCE</span><h3>Common Experience Fan Card</h3><div class="price">$200</div>
+<p>An accessible fan membership option for supporters who want to participate in eligible fan activities and receive selected updates.</p>
+<a class="button outline" href="#request">REQUEST THIS CARD</a></article>
+</div>
+</section>
+
+<section class="section" id="experiences">
+<p class="eyebrow">EVENTS & TICKETS</p><h2>Events & Tickets</h2>
+<p class="lead">Discover opportunities to participate in selected celebrity events and fan experiences. Browse available options and choose an experience that suits you.</p>
+<div class="cards">
+<article class="card"><h3>VIP Virtual Fan Experience</h3><div class="price">$500</div><p>Enjoy an exclusive virtual fan experience, including a member-only session, personalized fan interaction, and a memorable digital experience. Availability depends on the participating celebrity and scheduled event.</p><button class="text-button select-service" data-service="VIP Virtual Fan Experience — $500">REQUEST →</button></article>
+<article class="card"><h3>Premium Meet &amp; Greet Experience</h3><div class="price">$5,000</div><p>A premium fan experience featuring an eligible meet-and-greet opportunity, special member benefits, and a personalized keepsake. Availability and inclusions vary by celebrity and event.</p><button class="text-button select-service" data-service="Premium Meet & Greet Experience — $5,000">REQUEST →</button></article>
+<article class="card"><h3>VIP Ultimate Meet &amp; Greet</h3><div class="price">$10,000</div><p>Our highest-level fan experience. Specific benefits, eligibility, availability, and event inclusions are confirmed for the participating celebrity and event.</p><button class="text-button select-service" data-service="VIP Ultimate Meet & Greet — $10,000">REQUEST →</button></article>
+</div>
+</section>
+
+<section class="section light" id="vip"><p class="eyebrow">VIP</p><h2>VIP Membership</h2>
+<p class="lead">Take your fan experience to the next level with our premium VIP membership options. VIP packages may include additional benefits, priority opportunities, exclusive content, and special experiences.</p>
+<p>VIP benefits and availability vary by celebrity.</p><a class="button" href="#experiences">EXPLORE VIP OPTIONS</a></section>
+
+<section class="section" id="meet-greet"><p class="eyebrow">MEET & GREET</p><h2>Meet &amp; Greet Experiences</h2>
+<p class="lead">Make your fan experience memorable with opportunities to participate in eligible celebrity meet-and-greet experiences. Available experiences may include in-person or virtual interactions, depending on the celebrity and event.</p>
+<div class="notice"><strong>Important:</strong> Meet-and-greet opportunities are subject to availability and confirmation. Purchasing a membership does not automatically guarantee a meeting with a celebrity.</div>
+</section>
+
+<section class="section form-section" id="request"><p class="eyebrow">REQUEST FORM</p><h2>Request a Celebrity Fan Card</h2>
+<p class="lead">Enter the celebrity you want the membership for and provide your details. Upload the celebrity photo so it can be included with your submission.</p>
+<form id="requestForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST" enctype="multipart/form-data">
+<input type="hidden" name="subject" value="New MFC Fan Card / Experience Request">
+<div class="form-grid">
+<label>Celebrity Name<input name="celebrity_name" required placeholder="Celebrity's full name"></label>
+<label>Celebrity Photo<input name="celebrity_photo" type="file" accept="image/*" required><small>The uploaded photo will be included with the request email.</small></label>
+<label>Your Full Name<input name="customer_name" required placeholder="Your full name"></label>
+<label>Email Address<input name="email" type="email" required placeholder="you@example.com"></label>
+<label>Phone Number<input name="phone" type="tel" required placeholder="+1 234 567 8900"></label>
+<label>Country<input name="country" required placeholder="Country"></label>
+<label>Preferred Membership<select name="membership"><option>Celebrity Fan Club Card — $300</option><option>Common Experience Fan Card — $200</option></select></label>
+<label>Preferred Experience<select id="experience" name="experience"><option>None / Membership only</option><option>VIP Virtual Fan Experience — $500</option><option>Premium Meet & Greet Experience — $5,000</option><option>VIP Ultimate Meet & Greet — $10,000</option></select></label>
+<label class="full">Message<textarea name="message" rows="6" placeholder="Tell us which celebrity, membership or experience you are interested in."></textarea></label>
+</div>
+<label class="check"><input type="checkbox" required> I confirm that the information I provided is accurate.</label>
+<button class="button" id="submitButton" type="submit">SUBMIT REQUEST</button>
+<p id="status"></p>
+</form></section>
+
+<section class="section light" id="contact"><p class="eyebrow">CONTACT</p><h2>Contact Us</h2>
+<p class="lead">Have a question about fan cards, memberships, tickets, or experiences? Our support team is here to help.</p>
+<p><strong>Email:</strong> vipjeffteammanagement6789@gmail.com</p><p><strong>Phone/WhatsApp:</strong> Add your number here</p><p><strong>Customer Support Hours:</strong> Add your support hours here</p>
+<a class="button" href="#request">SEND US A MESSAGE</a></section>
+
+<section class="section" id="faq"><p class="eyebrow">FAQ</p><h2>Frequently Asked Questions</h2>
+<div class="faq">
+<details><summary>What is a fan card?</summary><p>A fan card is a membership card that identifies you as a member of a participating celebrity's fan community.</p></details>
+<details><summary>How do I purchase a fan card?</summary><p>Select your preferred celebrity, choose an available membership option, complete the required information, and follow the payment instructions provided by the authorized program.</p></details>
+<details><summary>Does buying a fan card guarantee a meet and greet?</summary><p>No. Meet-and-greet opportunities are separate experiences and are subject to availability and confirmation.</p></details>
+<details><summary>Can I request a celebrity who isn't listed?</summary><p>Yes. You can submit a request through the Request Form.</p></details>
+<details><summary>Are tickets refundable?</summary><p>Refund eligibility depends on the specific event and applicable cancellation policy.</p></details>
+<details><summary>Are all celebrities officially participating?</summary><p>Only celebrities and experiences that are legitimately authorized or officially participating should be presented as official. Availability and benefits vary.</p></details>
+</div></section>
+
+<section class="section light" id="terms"><p class="eyebrow">TERMS</p><h2>Terms &amp; Conditions</h2>
+<p>By using this website or purchasing a membership, you agree to our terms and conditions.</p>
+<p>Memberships, fan cards, tickets, and experiences are subject to availability and the specific terms presented at the time of purchase. Benefits may vary according to the celebrity, membership level, and event.</p>
+<p>Purchasing a fan card does not automatically guarantee personal contact, a meet-and-greet, event admission, or any other benefit unless that benefit is specifically stated and confirmed.</p>
+<p>All information about celebrity participation, events, pricing, cancellations, refunds, and membership benefits must be accurate and clearly communicated to customers.</p>
+<p>Users are responsible for providing accurate information when submitting orders or requests. We reserve the right to update membership offerings, event information, and these terms when necessary.</p>
+</section>
+
+<section class="section" id="privacy"><p class="eyebrow">PRIVACY</p><h2>Privacy Policy</h2>
+<p>This section should contain your final privacy policy describing what personal information and uploaded images you collect, why you collect them, how they are stored, who can access them, how long they are retained, and how customers can request deletion or correction.</p>
+<p><strong>Important:</strong> Replace this placeholder with a policy appropriate to your actual business and applicable privacy laws before publishing.</p></section>
+
+<footer><div class="brand"><span class="logo">MFC</span><span>MEMBERSHIP FAN CARD</span></div><p>Celebrity Fan Club • Fan memberships and experiences subject to availability, confirmation, and applicable terms.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
